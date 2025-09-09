@@ -8,4 +8,12 @@ class DImages {
   // Social logos
   static const String googleLogo = 'assets/logos/google.png';
   static const String facebookLogo = 'assets/logos/facebook.png';
+
+  // OnBoarding Images
+  static const String onBoardingImage1 =
+      "assets/images/on_boarding_image/on-boarding-image-1.png";
+  static const String onBoardingImage2 =
+      "assets/images/on_boarding_image/on-boarding-image-2.png";
+  static const String onBoardingImage3 =
+      "assets/images/on_boarding_image/on-boarding-image-3.png";
 }
