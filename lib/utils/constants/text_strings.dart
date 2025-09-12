@@ -13,7 +13,10 @@ class DTexts {
   static const String email = "E-Mail";
   static const String submit = "Submit";
   static const String tEmail = "E-Mail";
+  static const String tSignin = "SignIn";
   static const String tSignup = "Signup";
+  static const String tCreateAccount = "Create Account";
+  static const String tOrSignInWith = "Or Sign in With";
   static const String tLogout = "Logout";
   static const String appName = "T-Store";
   static const String ohSnap = "Oh Snap!";
@@ -68,7 +71,7 @@ class DTexts {
   // -- Login Screen Text
   static const String tLoginTitle = "Welcome Back,";
   static const String tLoginSubTitle =
-      "Make it work, make it right, make it fast.";
+      "Make it work, make it right,\n make it fast.";
   static const String tRememberMe = "Remember Me?";
   static const String tDontHaveAnAccount = "Don't have an Account";
   static const String tEnterYour = "Enter your";
@@ -80,6 +83,7 @@ class DTexts {
   static const String tGoogle = "Google";
 
   // -- Sign Up Screen Text
+
   static const String tSignUpTitle = "Get On Board!";
   static const String tSignUpSubTitle =
       "Create your profile to start your Journey.";
