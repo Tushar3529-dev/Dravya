@@ -4,7 +4,9 @@ import 'package:dravya/features/authentication/screens/login/widgets/login_form.
 import 'package:dravya/common/widgets/login_signup/form_divider.dart';
 import 'package:dravya/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:dravya/utils/constants/sizes.dart';
+import 'package:dravya/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -25,7 +27,7 @@ class LoginScreen extends StatelessWidget {
               const DLoginForm(),
 
               // Divider
-              const DFormDivider(),
+              DFormDivider(dividerText: DTexts.tOrSignInWith.capitalize!),
 
               const SizedBox(height: DSizes.spaceBtwSections),
               // Footer

@@ -1,11 +1,10 @@
 import 'package:dravya/utils/constants/colors.dart';
-import 'package:dravya/utils/constants/text_strings.dart';
 import 'package:dravya/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class DFormDivider extends StatelessWidget {
-  const DFormDivider({super.key});
+  final String dividerText;
+  const DFormDivider({super.key, required this.dividerText});
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +20,7 @@ class DFormDivider extends StatelessWidget {
             endIndent: 5,
           ),
         ),
-        Text(
-          DTexts.tOrSignInWith.capitalize!,
-          style: Theme.of(context).textTheme.labelMedium,
-        ),
+        Text(dividerText, style: Theme.of(context).textTheme.labelMedium),
         Flexible(
           child: Divider(
             color: dark ? DColors.darkGrey : DColors.grey,

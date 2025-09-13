@@ -4,7 +4,7 @@
 class DTexts {
   // -- GLOBAL Texts
   static const String tNo = "No";
-  static const String and = "and";
+  static const String and = " and ";
   static const String tYes = "Yes";
   static const String skip = "Skip";
   static const String done = "Done";
@@ -17,8 +17,13 @@ class DTexts {
   static const String tSignup = "Signup";
   static const String tCreateAccount = "Create Account";
   static const String tOrSignInWith = "Or Sign in With";
+  static const String tOrSignUpWith = "Or Sign up With";
+  static const String tUsername = "Username";
   static const String tLogout = "Logout";
-  static const String appName = "T-Store";
+  static const String iAgreeTo = "I agree to ";
+  static const String privacyPolicy = "Privacy Policy";
+  static const String termsOfUse = "Terms of Use";
+  static const String appName = "D-Store";
   static const String ohSnap = "Oh Snap!";
   static const String tSuccess = "Success";
   static const String tPhoneNo = "Phone No";
@@ -87,6 +92,8 @@ class DTexts {
   static const String tSignUpTitle = "Get On Board!";
   static const String tSignUpSubTitle =
       "Create your profile to start your Journey.";
+  static const String tFirstName = "First Name";
+  static const String tLastName = "Last Name";
   static const String tAlreadyHaveAnAccount = "Already have an Account";
 
   // -- Verify Email Screen Text

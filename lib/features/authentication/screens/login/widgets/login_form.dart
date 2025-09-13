@@ -1,6 +1,9 @@
+import 'package:dravya/features/authentication/screens/signup/signup.dart';
 import 'package:dravya/utils/constants/sizes.dart';
 import 'package:dravya/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class DLoginForm extends StatelessWidget {
@@ -62,7 +65,7 @@ class DLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(const SignupScreen()),
                 child: const Text(DTexts.tCreateAccount),
               ),
             ),
