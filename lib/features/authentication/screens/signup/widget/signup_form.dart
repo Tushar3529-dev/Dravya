@@ -1,8 +1,10 @@
-import 'package:dravya/common/widgets/term_and_condition.dart';
+import 'package:dravya/common/widgets/login_signup/term_and_condition.dart';
+import 'package:dravya/features/authentication/screens/signup/verify_email.dart';
 import 'package:dravya/utils/constants/sizes.dart';
 import 'package:dravya/utils/constants/text_strings.dart';
-import 'package:dravya/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/instance_manager.dart';
 import 'package:iconsax/iconsax.dart';
 
 class DSignupForm extends StatelessWidget {
@@ -10,7 +12,6 @@ class DSignupForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = DHelperFunction.isDarkMode(context);
     return Form(
       child: Column(
         children: [
@@ -84,7 +85,7 @@ class DSignupForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => VerifyEmailScreen()),
               child: const Text(DTexts.tCreateAccount),
             ),
           ),

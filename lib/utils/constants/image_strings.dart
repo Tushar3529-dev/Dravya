@@ -16,4 +16,8 @@ class DImages {
       "assets/images/on_boarding_image/on-boarding-image-2.png";
   static const String onBoardingImage3 =
       "assets/images/on_boarding_image/on-boarding-image-3.png";
+
+  // Verifying Screen
+  static const String signUpVerifyImage =
+      'assets/images/animations/sammy-line-man-receives-a-mail.png';
 }
