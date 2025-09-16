@@ -1,44 +1,48 @@
-import 'package:dravya/common/styles/spacing_styles.dart';
+import 'package:dravya/utils/constants/image_strings.dart';
 import 'package:dravya/utils/constants/sizes.dart';
 import 'package:dravya/utils/constants/text_strings.dart';
 import 'package:dravya/utils/helpers/helper_functions.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/utils.dart';
 
-class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({
-    super.key,
-    required this.image,
-    required this.title,
-    required this.subTitle,
-    required this.onPressed,
-  });
-  final String image, title, subTitle;
-  final VoidCallback onPressed;
+class RestPassword extends StatelessWidget {
+  const RestPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            onPressed: () => Get.back,
+            icon: Icon(CupertinoIcons.clear),
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: DSpacingStyle.paddingWithAppBarHeight * 2,
+          padding: EdgeInsets.all(DSizes.defaultSpacing),
           child: Column(
             children: [
-              // Image
+              // Image with 60% OF Screen width
               Image(
-                image: AssetImage(image),
+                image: AssetImage(DImages.emailVerifyImage),
                 width: DHelperFunction.screenWidth() * 0.6,
               ),
               const SizedBox(height: DSizes.spaceBtwSections),
               // Title and SubTitle
               Text(
-                title,
+                DTexts.changeYourPasswordTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: DSizes.spaceBtwItems),
 
               Text(
-                subTitle,
+                DTexts.changeYourPasswordSubTitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
@@ -47,8 +51,16 @@ class SuccessScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: onPressed,
-                  child: const Text(DTexts.tContinue),
+                  onPressed: () {},
+                  child: const Text(DTexts.done),
+                ),
+              ),
+              const SizedBox(height: DSizes.spaceBtwItems),
+              SizedBox(
+                width: double.infinity,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text(DTexts.tResendEmailLink),
                 ),
               ),
             ],

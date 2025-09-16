@@ -3,7 +3,7 @@ import 'package:dravya/common/widgets/login_signup/oAuth_button.dart';
 import 'package:dravya/features/authentication/screens/signup/widget/signup_form.dart';
 import 'package:dravya/utils/constants/sizes.dart';
 import 'package:dravya/utils/constants/text_strings.dart';
-import 'package:dravya/utils/helpers/helper_functions.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +12,6 @@ class SignupScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = DHelperFunction.isDarkMode(context);
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(

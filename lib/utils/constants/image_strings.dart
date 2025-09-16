@@ -20,4 +20,5 @@ class DImages {
   // Verifying Screen
   static const String signUpVerifyImage =
       'assets/images/animations/sammy-line-man-receives-a-mail.png';
+  static const String emailVerifyImage = 'assets/images/animations/Email.png';
 }

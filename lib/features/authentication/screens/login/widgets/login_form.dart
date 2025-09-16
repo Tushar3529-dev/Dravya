@@ -1,3 +1,4 @@
+import 'package:dravya/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:dravya/features/authentication/screens/signup/signup.dart';
 import 'package:dravya/utils/constants/sizes.dart';
 import 'package:dravya/utils/constants/text_strings.dart';
@@ -45,7 +46,7 @@ class DLoginForm extends StatelessWidget {
                 ),
                 // Forget Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgetPassword()),
                   child: const Text(DTexts.tForgetPassword),
                 ),
               ],

@@ -110,6 +110,9 @@ class DTexts {
   static const String tForgetPasswordTitle = "Make Selection!";
   static const String tForgetPasswordSubTitle =
       "Select one of the options given below to reset your password.";
+  static const String changeYourPasswordTitle = "Password Reset Email Sent";
+  static const String changeYourPasswordSubTitle =
+      "Your Account Security is Our Priority We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected";
   static const String tResetViaEMail = "Reset via Mail Verification";
   static const String tResetViaPhone = "Reset via Phone Verification";
 
