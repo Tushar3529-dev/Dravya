@@ -198,5 +198,6 @@ class DTexts {
 
   // -- Dashboard 1
   static const String popularProducts = "Popular Products";
-  static const String homeAppbarTitle = "Good day for shopping";
+  static const String homeAppBarTitle = "Good day for shopping";
+  static const String homeAppBarSubTitle = "Tushar Yadav";
 }
